@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<markers>
+<marker date="16/10/2008" time="14:44:1" dateL="16/10/2008" timeL="14:13:39" lat_MR3="48.83663046360016" lng_MR3="2.10058256983757" speed_MR3="4.20404" lat_MR2="48.83649438619614" lng_MR2="2.100131466984749" speed_MR2="6.6672" lat_MR1="48.83655542135239" lng_MR1="2.09953336417675" speed_MR1="8.40808" distance_MR3_MR2="36.361950348810325" distance_MR2_MR1="44.35141056270317" PDR="0" bytes="322368" bandwidth="2578944.0" jitter="0" rtt="0" />
+<marker date="16/10/2008" time="14:44:3" dateL="16/10/2008" timeL="14:13:41" lat_MR3="48.83664786815643" lng_MR3="2.100576415657997" speed_MR3="3.1854400000000003" lat_MR2="48.83650404214859" lng_MR2="2.100177578628063" speed_MR2="6.1116" lat_MR1="48.83651429414749" lng_MR1="2.0995481312274933" speed_MR1="8.77848" distance_MR3_MR2="33.32476524651856" distance_MR2_MR1="46.138838767017376" PDR="0" bytes="330560" bandwidth="2644480.0" jitter="0" rtt="0" />
+</markers>

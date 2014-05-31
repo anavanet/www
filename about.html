@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://twitter.github.com/bootstrap/examples/hero.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>AnaVANET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./css/docs.css" rel="stylesheet" />
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon-itssv6.ico">
+      <script type="text/javascript">
+        
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-715097-11']);
+        _gaq.push(['_setDomainName', 'anavanet.net']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+        
+        </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- facebook SDK -->
+  <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '507826759230275', // App ID
+      channelUrl : 'anavanet.net/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://anavanet.net/">AnaVANET</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="contributors.html">Contributors</a></li>
+              <li class="dropdown">
+                <a href="experiments.html" class="dropdown-toggle" data-toggle="dropdown">Experiments<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="experiments.html">About Experimentations</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Past Experimentations</li>
+                  <li><a href="demo-vienna/?analysis=1224948202">OLSRv6 (2008)</a></li>
+                  <li><a href="demo-vienna/?analysis=1264516500">GeoNet project (2010)</a></li>
+                  <li><a href="demo-vienna/?analysis=1296758672">CarGeo6 version 0.8.2 (2011)</a></li>
+                </ul>
+              </li>
+            </ul>
+              <a class="btn btn-link" href="http://anavanet.net/"><div class="fb-like" data-href="http://anavanet.net/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- container -->
+    <div class="container">
+      <div class="row">
+        <div class="span3 bs-docs-sidebar ">
+          <ul class="nav nav-list bs-docs-sidenav">
+            <li><a href="#do-experiment"><i class="icon-chevron-right"></i> 1. Do experiment</a></li>
+            <li><a href="#process"><i class="icon-chevron-right"></i> 2. Process </a></li>
+            <li><a href="#visualize"><i class="icon-chevron-right"></i> 3. Visualize</a></li>
+            <li><a href="#detail"><i class="icon-chevron-right"></i> Details</a></li>
+            <li><a href="#publications"><i class="icon-chevron-right"></i> Publications</a></li>
+          </ul>
+        </div>
+        
+        <div class="span9">
+
+    <h1><img style="height:80px" alt="AnaVANET" src="./figures/AnaVANET-logo.png"></h1>
+          <section id="do-experiments">
+    <h2>1. Do experiment.</h2>
+      <p class="lead">Get GPS data and packet capture (TCPDUMP log) in all the vehilce routers.</p>
+      <h4>Our vehicle equipments</h4>
+    		<div class="row">
+			<div class="span9">
+				<ul class="thumbnails">
+				  <li class="span3">
+				    <a href="figures/experiment1.jpg">
+				      <img src="figures/experiment1.jpg" alt="" class="img-rounded">
+				    </a>
+				  </li>
+<!--				  <li class="span3">
+				    <a href="figures/experiment2.jpg">
+				      <img src="figures/experiment2.jpg" alt="" class="img-rounded">
+				    </a>
+				  </li>-->
+				  <li class="span3">
+				    <a href="figures/experiment3.jpg">
+				      <img src="figures/experiment3.jpg" alt="" class="img-rounded">
+				    </a>
+				  </li>
+				  <li class="span3">
+				    <a href="figures/experiment4.jpg">
+				      <img src="figures/experiment4.jpg" alt="" class="img-rounded">
+				    </a>
+				  </li>
+				</ul>
+			</div>
+		</div>
+          </section>
+          <section id="process">
+
+            <h2>2. Process the experimental results</h2>
+      <p class="lead">2.1. Execute AnaVANET-processer (Java program) with two input files taken in the previous step (GPS log and TCPDUMP log).</p>
+      <p class="lead">2.2. Get two output files from AnaVANET-processer (Packet trace file and Statistics file).</p>
+          </section>
+          <section id="visualize">
+	 <h2>3. Visualize them</h2>
+	  <p class="lead">Visualize them with gnuplot and google maps</p>
+
+      <h4>Gnuplot examples</h4>
+    		<div class="row">
+			<div class="span9">
+				<ul class="thumbnails">
+<!--				  <li class="span3">
+				    <a href="figures/gnuplot4.png">
+				      <img src="figures/gnuplot4.png" alt="" >
+				    </a>
+				  </li>-->
+				  <li class="span3">
+				    <a href="figures/gnuplot3.png">
+				      <img src="figures/gnuplot3.png" alt="" >
+				    </a>
+				  </li>
+				  <li class="span3">
+				    <a href="figures/gnuplot2.png">
+				      <img src="figures/gnuplot2.png" alt="" >
+				    </a>
+				  </li>
+				  <li class="span3">
+				    <a href="figures/gnuplot1.png">
+				      <img src="figures/gnuplot1.png" alt="" >
+				    </a>
+				  </li>
+				</ul>
+			</div>
+		</div>
+
+      <h4>Google maps examples</h4>
+    		<div class="row">
+			<div class="span9">
+				<ul class="thumbnails">
+<!--				  <li class="span3">
+				    <a href="figures/googlemaps1.png">
+				      <img src="figures/googlemaps1.png" alt="" >
+				    </a>
+				  </li>-->
+				  <li class="span3">
+				    <a href="figures/googlemaps2.png">
+				      <img src="figures/googlemaps2.png" alt="" >
+				    </a>
+				  </li>
+				  <li class="span3">
+				    <a href="figures/googlemaps3.png">
+				      <img src="figures/googlemaps3.png" alt="" >
+				    </a>
+				  </li>
+				  <li class="span3">
+				    <a href="figures/googlemaps4.png">
+				      <img src="figures/googlemaps4.png" alt="" >
+				    </a>
+				  </li>
+				</ul>
+			</div>
+		</div>
+      
+      <h4>Google maps live demo</h4>
+      <div class="row">
+        <div class="span9">
+          <ul class="thumbnails">
+            <li class="span3">
+              <a class="btn btn-primary" href="demo-vienna/?analysis=1224948202">OLSRv6 tests (2008)</a>
+            </li>
+            <li class="span3">
+              <a class="btn btn-primary" href="demo-vienna/?analysis=1264516500">GeoNet tests (2010)</a>
+            </li>
+            <li class="span3">
+              <a class="btn btn-primary" href="demo-vienna/?analysis=1296758672">CarGeo6 tests (2011)</a>
+            </li>
+            <li class="span3">
+            </li>
+          </ul>
+        </div>
+      </div>
+          </section>
+      <hr>
+
+		<!-- ================================= -->
+          <section id="detail">
+
+    <h2>Details</h2>
+      <p>AnaVANET is a tool developed at INRIA with Murcia University to analyze vehicular networks. It has originally been used to evaluate OLSR-based ad-hoc vehicular networks [Santa2009b, Santa2009a] . Then, AnaVANET has been extended in order to analyze IPv6 packets transmitted with a GeoNetworking header and NEMO header [GeoNet-D.7, Tsukada2010a].</p>
+
+      <img src="figures/AnaVANET-overview.png" style="margin:10px; display: block; margin-left: auto; margin-right: auto; height:400px" class="img-polaroid" alt="overview">
+      
+      <p>Above figure provides an overview of the experimental evaluation process carried out in the tests. The Sender (MNN) is in charge of generating data traffic, and both the sender and the receiver record a high level log, according to the application used to generate network traffic. All MRs record information about forwarded data packets by means of the <i>tcpdump</i> software, and log the vehicle position continuously. All this data is post-processed by the AnaVANET software and then analyzed. A Java application traces all the data packets transmitted from the sender node. This way, it is possible to detect packet losses and calculate statistics for each link and end-to-end, and merge all these per-hop information with transport level statistics of the traffic generator. As a result, AnaVANET outputs an Extensible Markup Language (XML) file with statistics over one-second periods, and a packet trace file with the path followed by each data packet.</a>
+      
+        </section>
+          <section id="publications">
+    <H2>Publications</H2>
+      <ul class="unstyled">
+	      <li><i class="icon-file"></i>[<strong>Tsukada2014</strong>] Manabu Tsukada, José Santa, Satoshi Matsuura, Thierry Ernst and Kazutoshi Fujikawa, &quot;AnaVANET: an experiment and visualization tool for vehicular networks&quot;, 9th International Conference on Testbeds and Research Infrastructures for the Development of Networks &amp; Communities (TRIDENTCOM 2014), Guangzhou, China, May 2014 [ <a href="http://hal.inria.fr/hal-00983479">pdf</a> ] </li>
+      <li><i class="icon-file"></i>[<strong>Santa2009a</strong>] José Santa, Manabu Tsukada, Thierry Ernst, Olivier Mehani and  Antonio F. Gómez-Skarmeta. "Assessment of VANET multi-hop routing over an  experimental platform", Int. J. Internet Protocol Technology, Vol. 4, No. 3, pp. 158-172, 2009 Inderscience Publishers, 2009 [ <a href="http://hal.inria.fr/inria-00625837/en/">pdf</a> ]</li>
+      <li><i class="icon-file"></i>[<strong>Santa2009b</strong>] José Santa, Manabu Tsukada, Thierry Ernst and  Antonio F. Gómez-Skarmeta. &quot;Experimental Analysis of Multi-hop Routing in Vehicular Ad-hoc Networks&quot;, 2nd Workshop on Experimental Evaluation and Deployment Experiences on Vehicular networks (WEEDEV 2009) in conjunction with TRIDENTCOM 2009, Washington D.C., USA, April 6th, 2009. [ <a href="http://hal.inria.fr/inria-00625645/en/">pdf</a> ] </li>
+      <li><i class="icon-file"></i>[<strong>Tsukada2010a</strong>] Manabu Tsukada, Ines Ben Jemaa, Hamid Menouar, Wenhui Zhang, Maria Goleva and Thierry Ernst, &quot;Experimental Evaluation for IPv6 over VANET Geographic routing&quot;, 6th International Wireless Communications and Mobile Computing Conference, IWCMC 2010, Caen, France, June 2010. [ <a href="http://hal.inria.fr/inria-00505921/en/">link</a> (PDF, slides) ]</li>
+      <li><i class="icon-file"></i>[<strong>GeoNet-D.7</strong>] GeoNet project members, "D7.1 GeoNet Experimentation Results", January, 2010 [ <a href="http://www.geonet-project.eu/?download=GeoNet-D.7.1-ExperimentationResults-v1.1.pdf"> pdf </a> ]</li>
+      <li><i class="icon-file"></i>[<strong>Tsukada2011</strong>] Manabu Tsukada, &quot;Communications Management in Cooperative Intelligent Transportation Systems&quot;, 
+Ph.D Thesis of Mines ParisTech, December, 2011 [ <a href="http://tel.archives-ouvertes.fr/tel-00706187">pdf</a> ]
+</li>
+</li>
+      <li><i class="icon-file"></i>[<strong>ITSSv6-D4.1</strong>] ITSSv6 members, "ITSSv6 STREP No. 210519 D4.1 Initial Validation &amp; Evaluation Results 2012.</li>
+        
+          
+<!--      <li><i class="icon-file"></i></li>
+      <li><i class="icon-file"></i></li>-->
+
+      </ul>
+          </section>
+        </div>
+        
+        <hr>
+
+      <footer>
+        <p>© ITSSv6 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap-alert.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+    <script src="./js/bootstrap-dropdown.js"></script>
+    <script src="./js/bootstrap-scrollspy.js"></script>
+    <script src="./js/bootstrap-tab.js"></script>
+    <script src="./js/bootstrap-tooltip.js"></script>
+    <script src="./js/bootstrap-popover.js"></script>
+    <script src="./js/bootstrap-button.js"></script>
+    <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/bootstrap-carousel.js"></script>
+    <script src="./js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="./js/widgets.js"></script>
+    <script src="./js/bootstrap-affix.js"></script>
+    <script src="./js/application.js"></script>
+  
+
+</body></html>

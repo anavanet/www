@@ -1,0 +1,26 @@
+div#map {
+    width: 100%;
+    height: 100%;
+}
+
+div.colorBar {
+    font-family: Osaka-Mono;
+    color: #FFFFFF;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    float: left;
+}
+
+div#c-40 { background: #FF0A00 } 
+div#c-45 { background: #FF1F00 } 
+div#c-50 { background: #FF6100 } 
+div#c-55 { background: #F9A900 } 
+div#c-60 { background: #F8ED00 } 
+div#c-65 { background: #C7FF01 } 
+div#c-70 { background: #44D122 } 
+div#c-75 { background: #00BA57 } 
+div#c-80 { background: #00E8CD } 
+div#c-85 { background: #00E8FF } 
+div#c-90 { background: #0095E2 } 
+div#c-95 { background: #002F9D } 

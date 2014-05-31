@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://twitter.github.com/bootstrap/examples/hero.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>AnaVANET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon-itssv6.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+      <script type="text/javascript">
+        
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-715097-11']);
+        _gaq.push(['_setDomainName', 'anavanet.net']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+        
+        </script>
+  </head>
+
+  <body>
+  <!-- facebook SDK -->
+  <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '507826759230275', // App ID
+      channelUrl : 'anavanet.net/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://anavanet.net/">AnaVANET</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contributors.html">Contributors</a></li>
+              <li  class="active" class="dropdown">
+                <a href="experiments.html" class="dropdown-toggle" data-toggle="dropdown">Experiments<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="experiments.html">About Experimentations</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Past Experimentations</li>
+                  <li><a href="demo-vienna/?analysis=1224948202">OLSRv6 (2008)</a></li>
+                  <li><a href="demo-vienna/?analysis=1264516500">GeoNet project (2010)</a></li>
+                  <li><a href="demo-vienna/?analysis=1296758672">CarGeo6 version 0.8.2 (2011)</a></li>
+                </ul>
+              </li>
+            </ul>
+              <a class="btn btn-link" href="http://anavanet.net/"><div class="fb-like" data-href="http://anavanet.net/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h2>Experiment Scenarios</h2>
+      <p>We evaluate the network performance using the outdoor vehicular platform.
+      GPS is used to dynamically get vehicle position information and a network sniffer is used to retrieve packet information and paths. 
+      Real field evaluation is performed with the the following equipments with a test fleet of four conventional vehicles (Citroën C3 shown in the following figure). </p>
+      <div class="row">
+        <div class="span12">
+          <ul class="thumbnails">
+            <li class="span3">
+              <a href="figures/equipments-v1.jpg">
+                <img src="figures/equipments-v1.jpg" alt="" class="img-rounded">
+                  </a>
+            </li>
+            <li class="span3">
+              <a href="figures/equipments-v2.jpg">
+                <img src="figures/equipments-v2.jpg" alt="" class="img-rounded">
+                  </a>
+            </li>
+            <li class="span6">
+              <a href="figures/C3s.jpg">
+                <img src="figures/C3s.jpg" alt="" class="img-rounded">
+                  </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>A set of scenarios were considered taking into account several road parameters and con- straints to render the scenario as realistic as possible. The main factors which determine these scenarios are:</p>
+      <dl class="dl-horizontal">
+        <dt>Mobility: </dt>
+        <dd>Vehicle mobility is a key issue to cope with realistic VANET conditions. This way, we have considered static scenarios, to test the network operation in a controlled way, but also dynamic scenarios under common traffic situations. Of course, field operational tests should be conducted to confirm the experimental results taking into account proper handling of mobility, i.e. Doppler shifting, fast fading, etc.</dd>
+        <dt>Environment: </dt>
+        <dd>Urban and interurban environment affects communication performance, because the signal propagation is hidden by buildings (among other elements), and the line of sight between vehicles is not always possible. Two environments are considered in our tests: a semi-urban one located at INRIA-Rocquencourt, which contains a set of small buildings surrounded by streets, and a highway stretch, the A-12 autoway, near INRIA-Rocquencourt. The tests are performed in the 2.4 GHz radio band due to lack of available hardware in the 5.9GHz radio band (IEEE802.11p). Also, the results are affected by the type of antenna. Field operational tests should thus be performed in the 5.9 GHz frequency band and with antenna diversity.</dd>
+        <dt>Number of vehicles: </dt>
+        <dd>The number of hops between the source and the destination vehicles affect the communication delay, as it was expected. In addition to the extra forwarding delay, the packet loss at MAC level also increases due to transmission in- terferences. Up to three vehicles are considered in the field trials, in order to check the increase of communication delay with the number of hops.</dd>
+      </dl>
+      <p>As summarized in the follwoing figure, testing scenarios have been divided into urban and highway; mobility has been set to static, urban-like speed, and high speed; and a wide range of perfor- mance metrics have been used, such as bandwidth, RTT , jitter and PDR. The traffic types (UDP, TCP and ICMPv6) have been applied over each defined scenario.
+      </p>
+      <img src="figures/scenarios.png" style="margin:10px; display: block; margin-left: auto; margin-right: auto; height:400px" class="img-polaroid" alt="overview">
+
+        <dl>
+        <dt>Distance test</dt>
+          <dd>The distance test is performed with two vehicles as shown in the above figure. In the beginning of the test, both vehicles locate at same points. Then, one vehicle does not move at the point and the other vehicle leaves straight from the point during the communication between them with slow speed (up to 10 Km/h). At some point the packet between them are dropped because of wireless radio range limitation, then the moving vehicle return to the first place. When the vehicle comes back, the packets are transferred again in the wireless radio range.
+            There is no obstacle between vehicles and the aim of this scenario was to check the maximum distance the wireless range can reach.</dd>
+          
+          <dt>Static Test</dt>
+          <dd>As shown in the above figure, Static test is performed with three or four vehicles. All of them are parked at the place during the test and they are connected with multi-hop manner because the buildings block the direct communication between source and destination vehicles. This test brings the network performance result of two hops and three hops away because the network topology of the vehicles are stable and there are no route changes during the test.</dd>
+          
+          <dt>Urban Test</dt>
+          <dd>As shown in the above figure, Urban test is performed with three or four vehicles that are moving slowly (up to 30 Km/h). The buildings or the other obstacles block wireless radio access between vehicles frequently. Because of the dynamic environment, the topology of the vehicle network is changed frequently. The aim of the test is to measure the network performance with the dynamic topology change and evaluate the effect of the obstacle that block the wireless radio between vehicles.</dd>
+        
+        <dt>Highway Test</dt>
+        <dd> As shown in the above figure, Highway test is performed with three vehicles. The vehicles run on a highway during the UDP, TCP or ICMPv6 communication is established between vehicles. The speed is up to 100 km/h. The distance is dynamically varying due to road traffic conditions. However building will not block the wireless radio frequently.</dd>
+        </dl>
+        <hr>
+        <h2>OLSRv6 Experiments (2008)</h2>
+        <div class="row">
+          <div class="span12">
+            <ul class="thumbnails">
+              <li class="span6">
+                <iframe width="360" height="203" src="http://www.youtube.com/embed/bbHZtndrsH4?list=UUXJmtAs27dLU8AYZsQdWGHg&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+              </li>
+              <li class="span6">
+                <p></p>
+                <a class="btn btn-primary" href="demo-vienna/?analysis=1224948202">See this result »</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h2>GeoNet Project Experiments (2010)</h2>
+        <div class="row">
+          <div class="span12">
+            <ul class="thumbnails">
+              <li class="span6">
+                <iframe width="360" height="203" src="http://www.youtube.com/embed/7ykCyZuNMxo?list=UUXJmtAs27dLU8AYZsQdWGHg&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+              </li>
+              <li class="span6">
+                <p></p>
+                <a class="btn btn-primary" href="demo-vienna/?analysis=1264516500">See this result »</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h2>CarGeo6 Project Experiments (2011)</h2>
+        <div class="row">
+          <div class="span12">
+            <ul class="thumbnails">
+              <li class="span6">
+                <a href="figures/equipments-v2.jpg">
+                  <img src="figures/equipments-v2.jpg" alt="" class="img-rounded">
+                    </a>
+              </li>
+              <li class="span6">
+                <p></p>
+                <a class="btn btn-primary" href="demo-vienna/?analysis=1296758672">See this result »</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <!-- ----- footer ----------->
+      <hr>
+
+      <footer>
+        <p>© ITSSv6 2012</p>
+      </footer>
+      
+    </div> <!-- /container -->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap-alert.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+    <script src="./js/bootstrap-dropdown.js"></script>
+    <script src="./js/bootstrap-scrollspy.js"></script>
+    <script src="./js/bootstrap-tab.js"></script>
+    <script src="./js/bootstrap-tooltip.js"></script>
+    <script src="./js/bootstrap-popover.js"></script>
+    <script src="./js/bootstrap-button.js"></script>
+    <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/bootstrap-carousel.js"></script>
+    <script src="./js/bootstrap-typeahead.js"></script>
+
+  
+
+</body></html>

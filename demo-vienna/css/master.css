@@ -1,0 +1,162 @@
+A         { text-decoration: none }
+A:link    { color: #006699 }
+A:active  { color: #006699 }
+A:visited { color: #006699 }
+A:hover   { color: #0077aa }
+ 
+body { 
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: courier;
+    font-size: 11pt;
+    width: 450px;
+    float: left;
+}
+
+table#etcTable {
+    border-collapse: collapse;
+    font-family: courier;
+    font-size: 11pt;
+    width: 350px;
+    float: left;
+}
+
+td.etcTd {
+    padding: 0px;
+}
+
+input {
+    margin: 0;
+    border: 0;
+    padding: 5px;
+    font-family: courier;
+    font-size: 11pt;
+    width: 350px;
+}
+
+h6 {
+    clear: both;
+}
+
+th {
+    border: #CCCCCC solid 1px;
+    border-top: #3c4397 4px solid;
+    padding: 3px;
+    background-color: #f7f7f7;
+}
+
+tr.converted {
+    background: #F0F8FF;
+}
+
+td {
+    border: #CCCCCC solid 1px;
+    padding: 5px;
+}
+
+div#oldData {
+    font-family: courier;
+    width: 450px;
+    margin-top: 30px;
+    border: #888888 solid 1px;
+    border-top: #007000 4px solid;
+    visibility: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border-bottom: #CCCCCC 1px solid;
+    line-height: 1.5em;
+    padding-left: 5px;
+}
+
+p:hover {
+    background: #EEFFDD;
+}
+
+div#dropArea {
+    width: 450px;
+    height: 150px;
+    margin-top: 30px;
+    border: #888888 solid 1px;
+    border-top: #C01923 4px solid;
+    background: #EDEDED;
+}
+
+span {
+    font-family: courier;
+    text-align: center;
+    padding-top: 60px;
+    display: block;
+}
+
+/*
+h1 {
+    font-size: 100%;
+    border-left: #4F68B8 solid 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+h1.seminorH1 {
+    font-size: 100%;
+    border-left: #4F68B8 solid 5px;
+    border-bottom: #4F68B8 solid 1px;
+    width: 480px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    clear: both;
+    display: block;
+    font-size: 80%;
+    width: 490px;
+    height: 20px;
+    font-weight: bold;
+    padding: 2px 0px 0px 15px;
+    margin: 15px 0px 15px 0px;
+    background: url(../img/bkg_title.jpg) no-repeat left center;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 80%;
+    line-height: 150%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+textarea {
+    width: 480px;
+    height: 40px;
+    border : 1px solid #CCCCCC;
+}
+
+div#enqMain {
+    width:  500px;
+    margin-bottom: 50px;
+}
+
+div#enqItemEtc {
+    margin-bottom: 10px;
+}
+
+div.enqItem {
+    margin-bottom: 30px;
+}
+
+button#submitButton {
+    float: right;
+    width: 100px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+*/

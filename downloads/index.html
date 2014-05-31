@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://twitter.github.com/bootstrap/examples/hero.html  -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+    <title>AnaVANET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!-- Le styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      </style>
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href="../css/docs.css" rel="stylesheet" />
+<!--    <link href="http://twitter.github.com/bootstrap/http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">-->
+
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+    
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://anavanet.net/img/favicon-itssv6.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png"/ />
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png" />
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png" />
+      <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        <script type="text/javascript"/>
+        
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-715097-11']);
+        _gaq.push(['_setDomainName', 'anavanet.net']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+        </script>
+        </head>
+  
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-- facebook SDK -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+                appId      : '507826759230275', // App ID
+                channelUrl : 'anavanet.net/channel.html', // Channel File
+                status     : true, // check login status
+                cookie     : true, // enable cookies to allow the server to access the session
+                xfbml      : true  // parse XFBML
+                });
+        
+        // Additional initialization code here
+      };
+      
+      // Load the SDK Asynchronously
+      (function(d){
+       var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+       js.src = "//connect.facebook.net/en_US/all.js";
+       ref.parentNode.insertBefore(js, ref);
+       }(document));
+      </script>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://anavanet.net/">AnaVANET</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="../index.html"><i class="icon-home icon-white"></i>Home</a></li>
+              <li class="active"><a href="index.html">Downloads</a></li>
+            </ul>
+            </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      
+      <!-- Docs nav
+       ================================================== -->
+      <div class="row">
+        <div class="span3 bs-docs-sidebar ">
+          <ul class="nav nav-list bs-docs-sidenav">
+            <li><a href="#environment"><i class="icon-chevron-right"></i> Environment</a></li>
+            <li><a href="#downloads"><i class="icon-chevron-right"></i> Downloads</a></li>
+            <li><a href="#processor"><i class="icon-chevron-right"></i> AnaVANET-processor</a></li>
+            <li><a href="#viewer"><i class="icon-chevron-right"></i> AnaVANET-viewer</a></li>
+            <li><a href="#experiments"><i class="icon-chevron-right"></i> Experiment</a></li>
+            <li><a href="#rssi_heat_map"><i class="icon-chevron-right"></i> RSSI Heat Maps</a></li>
+            <li><a href="#development"><i class="icon-chevron-right"></i> Development</a></li>
+          </ul>
+        </div>
+        
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>AnaVANET</h1>
+            <p>Simple discription about the usage of Anavanet</p>
+          </div>
+          <p>Last update : $Date: 2014-05-12 21:05:44 +0900 (Mon, 12 May 2014) $<br>
+          $Author: tsukada $</p>
+          <!-- ===== Environment ==== -->
+
+          <section id="environment">
+            <h1>Tested environment and Softwares</h1>
+            <p>I'm using following software versions. AnaVANET may be not dependent on specific version of softwares.
+            </p>
+            <dl class="dl-horizontal">
+              <dt>OS:</dt>
+              <dd>MAC OSX 10.8.2 (Mountain Lion)</dd>
+              <dt>JAVA:</dt>
+              <dd>java version "1.6.0_37"</dd>
+              <dt>Netbeans IDE:</dt>
+              <dd>7.2.1</dd>
+              <dt>Perl:</dt>
+              <dd>v5.12.4 (darwin-thread-multi-2level)</dd>
+              <dt>Blowsers:</dt>
+              <dd>Chrome Version 23.0.1271.64<BR>
+                Safari Version 6.0.2 (8536.26.17)<BR>
+                Firefox 16.0.2<BR>
+                Opera 12.10</dd>
+
+
+          </section>
+          <!-- ===== Downloads ==== -->
+          <section id="downloads">
+              <h1>Downloads</h1>
+            <dl>
+              <dt>2011-handover-data-sample</dt>
+              <dd><p>The data of the experiments that was taken using GeoNetworking and NEMO in 2011. GPS and TCPDUMP log were recorded in all of OBU4, RSU and RSU2. The UDP iperf log were taken in Receiver side. <BR>
+                <a href="src/2011-handover-data-sample.zip"><button class="btn btn-primary" type="button">2011-handover-data-sample.zip</button></a>
+              </dd>
+              <dt>packet-processor</dt>
+              <dd>A Java program to process the GPS and TCPDUMP log taken in the experiments. The source code is developped with <a href="http://www.netbeans.org/">netbeans<a>.
+              <BR><a href="src/packet-processor.zip"><button class="btn btn-primary" type="button">packet-processor.zip</button></a></dd>
+              <dt>web-viewer-v0.2</dt>
+              <dd>The web viewer to show the experiments data with Google maps.
+              <BR><a href="src/web-viewer-v0.2.zip"><button class="btn btn-primary" type="button">web-viewer-v0.2.zip</button></a></dd>
+            </dl>
+            
+<pre class="prettyprint">
+  AnaVANET/  (recommend to create this directory)
+  ├── 2011-handover-data-sample/
+  │   ├── memo.txt
+  │   ├── OBU4/
+  │   ├── Receiver/
+  │   ├── RSU/
+  │   ├── RSU2/
+  │   └── Sender/
+  ├── packet-processor/
+  │   ├── build.xml
+  │   ├── manifest.mf
+  │   ├── nbproject/
+  │   └── src/
+  └── web-viewer-v0.2/
+      ├── index.cgi
+      ├── tool/
+      ├── convert_old_anavanet_xml_and_save_json.pl
+      │   └── convert_old_anavanet_xml.pl
+      └── (Others)/
+</pre>
+
+              
+          </section>
+          <!-- ===== Usage ==== -->
+            
+            <h2>Usage</h2>
+          <section id="processor">
+            <h3>AnaVANET-processor</h3>
+            <ol>
+              <li>Downloads packet-processor.zip and unzip it.</li>
+              <li>Install <a href="http://www.netbeans.org/">Netbeans</a> and open packet-processor</li>
+              <li>Build the AnaVANET netbeans project (Shortcut key is F11). </li>
+              <li>The built program is found in packet-processor/dist/AnaVANET.jar </li>
+              <li>The help message can be shown by the following commend.</li>
+<pre>
+$ java -jar packet-processor/dist/AnaVANET.jar -help
+                
+Usage:   <execution_string> [-help] [<MR_ID MR_MAC dump_file_MR gps_file_MR> <MR_ID MR_MACdump_file_MR gps_file_MR> ...] (-UDP | -TCP | -PING) <high_level_file> -C2CNET -GN6 -NEMOSIG
+</pre>
+              <li>Downloads 2011-handover-data-sample.zip and unzip it.</li>
+              <li>Go 2011-handover-data-sample/ and type the following command</li>
+              <pre>$ sh memo.txt</pre>
+              <li>The following figure is the simple usage of AnaVANET-processor.
+              <img src="figures/AnaVANET-basic-command.png" alt="AnaVANET-basic-command" /></li>
+              <li>NEMOSigtraces.log, UDPtraces.log, UDPtraces_position.xml and distances.log are generated.
+               <img src="figures/processor-new-files.png" alt="processor new files" /></li>
+                <dl>
+                  <dt>NEMOSigtraces.log</dt>
+                  <dd>Trace file of NEMO signaling (Binding Upate (BU), Binding Acknowlegement(BA)). The first two lines of the following example shows that the binding update is successfully registered in the HA (Time 19:51:37.978 and 19:51:48.979). In contrast, the binding updates sent from MR3 to RSU2 is dropped in the last two lines of the example (Time 19:51:59.979 and 19:52:0.982). The number of hops the packet relayed is recorded after the time. 
+<pre>
+  19:51:37.978 3 MR3(RSU2) RSU2(MR3x) MR3x(MR3)
+  19:51:48.979 3 MR3(RSU2) RSU2(MR3x) MR3x(MR3)
+  19:51:59.979 1 MR3(RSU2)
+  19:52:0.982 1 MR3(RSU2)
+</pre>
+  </dd>
+                  <dt>UDPtraces.log</dt>
+                  <dd>The Trace file if UDP packets. The first two lines of the following example shows that the packets sent from MR3 is received in RSU2. The two rest lines shows that the packets sent from MR3 is received in RSU1. In other words, handover is triggered between time of 19:53:16 and 19:53:24. 
+<pre>
+  19:53:16.941 2 MR3(RSU2) RSU2(RSU2)
+  19:53:16.945 2 MR3(RSU2) RSU2(RSU2)
+  19:53:24.23 2 MR3(RSU1) RSU1(RSU1)
+  19:53:24.23 2 MR3(RSU1) RSU1(RSU1)
+</pre>
+                  </dd>
+                  <dt>UDPtraces_position.xml</dt>
+                  <dd>This file is the one second statistics used in the Google Maps viewer.
+<pre>
+&lt;marker date=&quot;3/2/2011&quot; time=&quot;18:51:34&quot; dateL=&quot;3/2/2011&quot; timeL=&quot;19:51:13&quot; lat_MR3=&quot;48.83783435821533&quot; lng_MR3=&quot;2.099832110106945&quot; speed_MR3=&quot;0.09260000000000002&quot; lat_RSU1=&quot;48.83770191669464&quot; lng_RSU1=&quot;2.101257346570492&quot; speed_RSU1=&quot;0.0&quot; lat_RSU2=&quot;48.83815002441406&quot; lng_RSU2=&quot;2.0986740216612816&quot; speed_RSU2=&quot;0.0&quot; distance_MR3_RSU1=&quot;105.47162577420258&quot; distance_RSU1_RSU2=&quot;195.7590989206364&quot; PDRlink_MR3_RSU2=&quot;0&quot; PDRlink_RSU2_RSU2=&quot;0&quot; PDRlink_MR3_RSU1=&quot;0&quot; PDRlink_RSU1_RSU1=&quot;0&quot; PDR=&quot;0&quot; bytes=&quot;0&quot; bandwidth=&quot;0.0&quot; jitter=&quot;0&quot; rtt=&quot;0&quot; NEMO_status=&quot;0&quot; /&gt;
+</pre>
+                  </dd>
+                  <dt>distances.log</dt>
+                  <dd>A temporary file. Do not care. </dd>
+                </dl>
+<!--                *.log is the packet trace file that record the sequence of the nodes that the packets forwarded. UDPtraces_position.xml is the one second statistics used in the Google Maps viewer.</li>-->
+            </ol>
+            <h4>AnaVANET-processor parameters to process your own data</h4>
+              <ol>
+                <li>Open packet-processor/src/anavanet/packettrace/PacketTracer.java and check the time zone of hardware time. If it uses UTC, keep DIFF_UTC_TIME = 0, otherwise specify the gap between used time zone.
+<pre>
+    // Difference between Madrid/Paris time and UTC time, in hours // Summer time =-1, Winter =-2 
+    private static final int DIFF_UTC_TIME = 0;
+</pre>
+                </li>
+                <li>When you process UDP packets, open packet-processor/src/anavanet/packettrace/PacketTracer.java and check the total packet size of the UDP packets. AnaVANET ignores the packets except for the packets with the specified size. 
+<pre>
+    // When iperf with 1300 Bites, it will be 1442 by adding 142 bits of C2C NET header
+    // GN6 == 1444 (old) // new == 1432
+    private static final int IPERF_PACKET_SIZE = 1432;
+</pre>
+                </li>
+              </ol>
+            </section>
+          <section id="viewer">
+
+            <h3>AnaVANET-viewer</h3>
+            <ol>
+              <li>Downloads web-viewer-v0.2.zip and unzip it.</li>
+              <li>Change the permission of index.cgi as executable. </li>
+              <pre>$ chmod +x index.cgi</pre>
+              <li>Change the permission of data directory as readable and writable.</li>
+              <pre>$ chmod 777 data/ data/json data/upload</pre>
+              <li>Edit the first line of index.cgi with the correct path of perl. You can check the path of perl in your environment by the following command.
+<pre>
+  $ which perl
+  /opt/local/bin/perl
+</pre>
+                In this case, please edit the first line of index.cgi as follow.
+<pre>
+  #!/opt/local/bin/perl
+</pre>
+              </li>
+
+              <li>Execute index.cgi with command line. This command returns error anyway.</li>
+<pre> $ perl index.cgi
+  Can't locate FindBin/Real.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at index.cgi line 4.
+  BEGIN failed--compilation aborted at index.cgi line 4.
+</pre>
+              <li>If the error says lack of the perl modules, Install the necessary modules like the following commands. If the type of errors are not like above, but like bellow, you already have all necessary perl modules. Please skip installing perl modules. </li>
+<pre> $ sudo cpan
+  cpan[1]> install FindBin::Real
+  cpan[2]> install Try::Tiny
+  cpan[3]> install JSON::XS
+  cpan[4]> install Text::Xslate
+</pre>
+              <li>Continue above installation untill the error message gives following error.</li>
+<pre>
+  $ perl index.cgi
+  [Sun Nov 11 16:33:03 2012] index.cgi: Use of uninitialized value $req_method in hash element at index.cgi line 32.
+  [Sun Nov 11 16:33:03 2012] index.cgi: Use of uninitialized value in subroutine entry at index.cgi line 41.
+  &lt;h1&gt;Software error:&lt;/h1&gt;
+  &lt;pre&gt;Can&#039;t use string (&amp;quot;&amp;quot;) as a subroutine ref while &amp;quot;strict refs&amp;quot; in use at index.cgi line 41.
+  &lt;/pre&gt;
+  &lt;p&gt;
+  For help, please send mail to this site&#039;s webmaster, giving this error message
+  and the time and date of the error.
+  
+  &lt;/p&gt;
+  [Sun Nov 11 16:33:03 2012] index.cgi: Can&#039;t use string (&quot;&quot;) as a subroutine ref while &quot;strict refs&quot; in use at index.cgi line 41.
+</pre>
+              <li>Access web-viewer-v0.2/ directory with your browser (example: http://localhost/~username/AnaVANET/web-viewer-v0.2/). If your localhost runs apache2 webserver, you will see the screen like this. Drag and drop the UDPtraces_position.xml file that you have generated with the packet-processor program as in the following figure. For MAC users, see <a href="http://coolestguyplanettech.com/downtown/install-and-configure-apache-mysql-php-and-phpmyadmin-osx-108-mountain-lion">Install and configure Apache, MySQL, PHP on OSX 10.8 Mountain Lion</a>. </li>
+                <li>(If you could not see the page, check apache2 setting. Here is mine.)</li>
+  <pre>  &lt;Directory &quot;/Users/tsukada/Sites/&quot;&gt;
+    AddHandler cgi-script .cgi
+    Options Indexes MultiViews ExecCGI
+    DirectoryIndex index.html index.cgi
+    #AllowOverride All
+    #Order allow,deny
+    Allow from all
+  &lt;/Directory&gt;</pre>
+              <img src="figures/web-viewer-v0.2.png" alt="web-viewer-v0.2" class="img-rounded">
+
+                <li>Click the new green line. Convert is success if "SUCCESS: convert" appears.</li>
+                <img src="figures/convert-success.png" alt="convert-success" class="img-rounded">
+                <li>Click the "Link" in the newly created table line. You will see the following page. Congratulations!! </li>
+                  <img src="figures/anavanet-screenshot.png" alt="anavanet-screenshot">
+               <li>Press space key to play. 'n' key to next step. 'p' key to previous step. Click the button on the top right corner of the screen. 
+                 </li>
+	       <li>Playback control and the other functions are removed from the core functions of AnaVANET in order to keep the core functionality as simple as possible. See the AnaVANET demonstration for more advanced features in web-viewer. All the HTML and javascripts are accessible via the browser. The HTML and javascript is based on <a href="http://twitter.github.com/bootstrap/">Twitter bootstrap</a>.<BR>
+                 <a href="http://anavanet.net/demo-vienna/?analysis=1264516500"><button class="btn btn-primary" type="button">AnaVANET demo</button></a>
+               </li>
+            </ol>
+          </section>
+          <!-- ===== Experiments ==== -->
+          <section id="experiments">
+            <h2>Experiments</h2>
+            <h3>About Scripts in experiment</h2>
+            <p>If you read until this place, you already download the scripts used in the past experiment, because 2011-handover-data-sample.zip is the complete backup of the experiment took place in 2011. All the scripts and the configuration files are thus in it.
+<pre>
+  2011-handover-data-sample/
+  ├── OBU4/
+  │   ├── startOBU.sh
+  │   ├── itsnet.conf
+  │   ├── radvd.conf
+  │   └── mip6d.conf
+  ├── RSU/
+  │   ├── startRSU.sh
+  │   ├── radvd.conf
+  │   └── imara-bt7.txt
+  ├── RSU2/
+  │   ├── startRSU.sh
+  │   ├── radvd.conf
+  │   └── imara-bt20.txt
+  ├── Receiver/
+  │   └── outdoor-recv.sh
+  └── Sender/
+      └── outdoor-sender.sh
+</pre>
+              <h3>Usage of the scripts</h3>
+              <p>Edit the script and configuration and then, launch the scripts (startOBU.sh and startRSU.sh) in both OBU and RSU like follows
+<pre>
+  OBU4 # ./startOBU.sh
+  RSU1 # ./startRSU.sh
+  RSU2 # ./startRSU.sh
+</pre>
+              <p>Now the routing setup and AnaVANET setup is ready. Generate the UDP or ICMPv6 traffic by following commands.</p>
+              <p>In the case of UDP, the commands of receiver side is:
+<pre>
+  UDP_Receiver # ./outdoor-recv.sh  --UDP
+  or
+  UDP_Receiver # iperf -s --format b -i .5 -V >> log.txt
+</pre>
+              The commands of sender side is:
+<pre>
+  UDP_Sender # ./outdoor-sender.sh --UDP
+  or
+  UDP_Sender # iperf --client $DST --udp --format b -i .5 -V --time 900 --bandwidth 1000000 --len 1250 >>  log.txt
+</pre>
+  </p>
+              <p> In the case of ICMPv6, only sender side needs a command as follows:
+<pre>
+  ICMPv6_Sender # ./outdoor-sender.sh --UDP
+  or
+  ICMPv6_Sender # ping6 -i 0.5  $DST >> log.txt
+</pre>
+              </p>
+              <h3>About data</h2>
+
+              <p>
+              The TCPDUMP log taken in the experiments are converted to text file with the following commends.
+              <pre>$ tcpdump -r (dump_file) -xx -nn -s1500 > tcpdump.txt</pre>
+              </p>
+              <p>
+              The GPS log taken in the experiments are renamed. For example,
+              <pre>$ cp gps_MR_20110203-19-50-768999717.log gps.txt </pre>
+              </p>
+          </section>
+          
+          <!-- ===== RSSI Heat Map ==== -->
+          <section id="rssi_heat_map">
+            <h2>RSSI Heat Map</h2>
+              <h3>Downloads</h3>
+            <dl>
+              <dt>2012-09-18-RSSI-test</dt>
+	      <dd><p>The data of the experiments that was taken between fixed an access router and a moving vehicle in 2012. The sender access router sent UDP packet using Iperf and the receiver vehicle recorded the log of GPS and TCPDUMP. (14.5 MB)<BR>
+                <a href="src/2012-09-18-RSSI-test.zip"><button class="btn btn-primary" type="button">2012-09-18-RSSI-test.zip</button></a>
+              </dd>
+              <dt>sync_geo_rssi</dt>
+              <dd>A set of perl programs to process the GPS and TCPDUMP log taken in the experiments. 
+              <BR><a href="src/sync_geo_rssi.zip"><button class="btn btn-primary" type="button">sync_geo_rssi.zip</button></a></dd>
+            </dl>
+<pre class="prettyprint">
+  AnaVANET/  (recommend to create this directory)
+  ├── 2012-09-18-RSSI-test/
+  │     ├── gps.txt
+  │     └── moni.pcap
+  └── sync_geo_rssi/
+        ├── lib/
+        ├── nmea.pl
+        ├── readme.txt
+        ├── rssi.pl
+        ├── sync_gps_rssi.pl
+        └── t/
+</pre>
+    <h3>Usage</h3>
+                <ol>
+              <li>Downloads 2012-09-18-RSSI-test.zip and sync_geo_rssi.zip. And unzip them in the same directory.</li>
+              <li>Go sync_geo_rssi/ and type the following command in order to generate a json format file from the GPS log and the TCPDUMP log. See "readme.txt" in sync_geo_rssi/ more detail about the usage of sync_gps_rssi.pl </li>
+<pre>
+  $ ./sync_gps_rssi.pl > ../web-viewer-v0.2/data/rssi/20120918150814_sync_rssi_gps.json
+</pre>
+              <li>(Install perl module of JSON::XS and Class::Accessor::Lite, if necessary in the previous step.)</li>
+              <li>Access RSSI Heat map page with specifying your json file name (example: http://localhost/~username/AnaVANET/web-viewer-v0.2/?rssi=20120918150814). You will see the following page. Congratulations!! </li>
+                  <img src="figures/rssi_heatmap-screenshot.png" alt="rssi_heatmap-screenshot">
+                  <li>See the AnaVANET demonstration for more advanced features in web-viewer. All the HTML and javascripts are accessible via the browser. The HTML and javascript is based on <a href="http://twitter.github.com/bootstrap/">Twitter bootstrap</a>.<BR>
+                 <a href="http://anavanet.net/demo-vienna/?rssi=20120918150814"><button class="btn btn-primary" type="button">RSSI Heatmap demo</button></a>
+               </li>
+          </section>
+
+          <!-- ===== Development ==== -->
+          <section id="development">
+            <h2>Development</h2>
+            <p>under constraction</p>
+          </section>
+          
+        </div>
+      </div>
+      
+      
+      
+      <!-- footer -->
+      <hr>
+      
+      <footer>
+        <p>© ITSSv6 2012</p>
+      </footer>
+      
+    </div> <!-- /container -->
+    
+    <!-- Le javascript
+     ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap-transition.js"></script>
+    <script src="../js/bootstrap-alert.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/bootstrap-dropdown.js"></script>
+    <script src="../js/bootstrap-scrollspy.js"></script>
+    <script src="../js/bootstrap-tab.js"></script>
+    <script src="../js/bootstrap-tooltip.js"></script>
+    <script src="../js/bootstrap-popover.js"></script>
+    <script src="../js/bootstrap-button.js"></script>
+    <script src="../js/bootstrap-collapse.js"></script>
+    <script src="../js/bootstrap-carousel.js"></script>
+    <script src="../js/bootstrap-typeahead.js"></script>
+    
+    <script type="text/javascript" src="../js/widgets.js"></script>
+    <script src="../js/bootstrap-affix.js"></script>
+    <script src="../js/application.js"></script>
+
+    
+  </body></html>
