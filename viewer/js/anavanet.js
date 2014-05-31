@@ -755,10 +755,15 @@ AnaVanetMap.prototype = {
       var infoSpeedValue = $( id ).find('.infoSpeed').children('.infoDataValue');
       var infoLatValue   = $( id ).find('.infoLat').children('.infoDataValue');
       var infoLngValue   = $( id ).find('.infoLng').children('.infoDataValue');
+      var infoCPUValue   = $( id ).find('.infoCPU').children('.infoDataValue');
+      var infoMEMValue   = $( id ).find('.infoMEM').children('.infoDataValue');
       
       infoSpeedValue.html( sprintf("%3.3f (km/h)", node.speed ) );
       infoLatValue.html( sprintf("%3.7f", node.lat) );
       infoLngValue.html( sprintf("%3.7f", node.lng) );
+      // TODO, if there are no infomation, just 0 
+      infoCPUValue.html( sprintf("%3.2f", node.cpuWork? node.cpuWork: 0) );
+      infoMEMValue.html( sprintf("%3.2f", node.memFree? node.memFree: 0) );
     }
   },
   
@@ -1070,6 +1075,8 @@ var infoAreaUtil = {
     nodeInfo.append( this.getInfoDataDiv( 'Speed' ) );
     nodeInfo.append( this.getInfoDataDiv( 'Lat' ) );
     nodeInfo.append( this.getInfoDataDiv( 'Lng' ) );
+    nodeInfo.append( this.getInfoDataDiv( 'CPU' ) );
+    nodeInfo.append( this.getInfoDataDiv( 'MEM' ) );
     return nodeInfo;
   },
   

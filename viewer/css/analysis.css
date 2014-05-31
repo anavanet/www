@@ -58,7 +58,7 @@ div.dragInfoDataArea {
 }
 
 div.dragInfoNodeArea {
-    height: 55px;
+    height: 90px; 
     background-color: rgba(192,192,192,0.8);
 }
 
