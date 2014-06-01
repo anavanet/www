@@ -67,21 +67,26 @@ div.dragInfoLinkArea {
     background-color: rgba(192,208,192,0.8);
 }
 
-div.dragGraphArea {
+div.dragGraphAreaDefault {
     z-index: 2;
-    top : 100px;
+    top : 50px;
     left : 70px;
-    width: 400px;
-    height: 180px;
+    width: 360px;
+    height: 162px;
     background-color: rgba(255,255,255,0.9);
     position: fixed;
+}
+
+div.dragGraphAreaRight {
+    left : -10px;
+    float: right;
 }
 
 div.graphContainer {
     margin-left: 5px;
     margin-right: 15px;
-    width: 380px;
-    height: 180px;
+    width: 340px;
+    height: 162px;
 }
 
 div#map {
