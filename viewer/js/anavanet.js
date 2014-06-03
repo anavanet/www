@@ -499,6 +499,8 @@ AnaVanetMap.prototype = {
     //------------------------------
     redrawReqPDRBtn : function() {
         var reqPDRGraph = $('#graphReq_PDR');
+        console.log('redrawReqPDRBtn' + reqPDRGraph.length);
+
         if( this.reqPDRGraphMode ) {
             // TODO check graph is null or not
             if( reqPDRGraph.length == 0 ) {
@@ -540,12 +542,13 @@ AnaVanetMap.prototype = {
     //------------------------------
     redrawCpuBtn : function() {
         var cpuGraph = $('#graphCPU');
-        if( this.psusage == true ) {
-            if( this.cpuGraphMode ) {
-                console.log('createCpuGraph');
+        console.log('createCpuGraph = ' + cpuGraph.length );
+
+        if( this.psusage == true && this.cpuGraphMode  ) {
+            if( cpuGraph.length == 0) {
                 this.createCpuGraph();
             }else {
-                cpuGraph.css('display', 'none');
+                cpuGraph.css('display', 'block');
             }
         }else {
             cpuGraph.css('display', 'none');
@@ -561,13 +564,13 @@ AnaVanetMap.prototype = {
     //------------------------------
     redrawMemBtn : function() {
         var memGraph = $('#graphMEM');
-        
-        if( this.psusage == true ) {
-            
-            if( this.memGraphMode ) {
+        console.log('createMemGraph = ' + memGraph.length );
+
+        if( this.psusage == true && this.memGraphMode  ) {
+            if( memGraph.length == 0) {
                 this.createMemGraph();
             }else {
-                memGraph.css('display', 'none');
+                memGraph.css('display', 'block');
             }
         }else {
             memGraph.css('display', 'none');
