@@ -933,7 +933,7 @@ AnaVanetMap.prototype = {
         var bandwidthData = [];
         var len = this.exp.data.length;
         for( var i = 0; i < len; i++ ) {
-            bandwidthData.push([i, this.exp.data[i].bandwidth]);
+            bandwidthData.push([i, this.exp.data[i].bandwidth / 1000]);
         }
         this.graph.bandwidth = new AnaVanetGraph(  {title : 'Bandwidth', plots : { bandwidth : bandwidthData} } );
         this.graph.bandwidth.createGraphAt( this.count, 'left'  );
@@ -1038,8 +1038,8 @@ function AnaVanetGraph( data ) {
     this.colors = ['#00A8F0', '#C0D800', '#CB4B4B', '#4DA74D', '#9440ED'];
     this.formatter = {
         normal    : "%s %s",
-        Jitter    : "%s %.3f",
-        Bandwidth : "%s %d",
+        Jitter    : "%s %.3fms",
+        Bandwidth : "%s %d Kbits/s",
         RTT       : "%s %.2fms",
         Req_PDR   : "%s %d\%",
         Res_PDR   : "%s %d\%",
